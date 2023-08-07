@@ -87,7 +87,7 @@ function App() {
       } else {
         clearInterval(interval1);
       }
-    }, 1000);
+    }, 200);
 
     const interval2 = setInterval(() => {
       if (count2 < maxNumber2) {
@@ -95,7 +95,7 @@ function App() {
       } else {
         clearInterval(interval2);
       }
-    }, 1000);
+    }, 200);
 
     const interval3 = setInterval(() => {
       if (count3 < maxNumber3) {
@@ -103,7 +103,7 @@ function App() {
       } else {
         clearInterval(interval3);
       }
-    }, 1000);
+    }, 200);
 
     return () => {
       clearInterval(interval1);

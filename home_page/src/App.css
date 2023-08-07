@@ -142,7 +142,7 @@
   background: rgb(14, 235, 202);
   width: 0%;
   height: 0%;
-  border-radius: 40%;
+  border-radius: 5px;
   z-index: -1;
   top: 50%;
   left: 50%;
@@ -159,9 +159,10 @@
 }
 .nav-button:hover {
   color: #0e0e0e;
-  border-color: rgb(14, 235, 202);
+  /* border-color: rgb(14, 235, 202);
   border-width: 2px;
-  border-style: solid;
+  border-style: solid; */
+  border: none;
 }
 .first-section {
   height: 1080px;
