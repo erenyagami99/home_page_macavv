@@ -35,6 +35,7 @@ function App() {
     false,
     false,
   ]);
+  const [svgSelect, setSvgSelect] = useState(false);
   const [isColorChanged, setIsColorChanged] = useState(false);
 
   const handleClick = (index) => {
@@ -142,12 +143,16 @@ function App() {
         </div>
       </div>
       <div className="first-section">
-        <div className="vector-div">
+        <div
+          onClick={() => {
+            setSvgSelect(!svgSelect);
+          }}
+          className={`${svgSelect ? "vector-div-two" : "vector-div"}`}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
-            className="vector-img"
-            height="2"
+            className={`${svgSelect ? "vector-img-click" : "vector-img"}`}
           >
             <path
               d="M0 0h22a1 1 0 0 1 1 1v1H1a1 1 0 0 1-1-1V0z"
@@ -158,7 +163,9 @@ function App() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
-            className="vector-img2"
+            className={`${
+              svgSelect ? "vector-img-two-click" : "vector-img-two"
+            }`}
             height="2"
           >
             <path
