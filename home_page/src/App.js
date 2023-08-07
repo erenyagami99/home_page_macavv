@@ -166,7 +166,6 @@ function App() {
             className={`${
               svgSelect ? "vector-img-two-click" : "vector-img-two"
             }`}
-            height="2"
           >
             <path
               d="M0 0h22a1 1 0 0 1 1 1v1H1a1 1 0 0 1-1-1V0z"
