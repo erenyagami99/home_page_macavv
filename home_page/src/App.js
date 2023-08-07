@@ -409,7 +409,7 @@ function App() {
                   </div>
                 )}
               </div>
-              <div className="service-description">
+              <div className="service-description service-last">
                 <div className="service-details-heading">
                   <h1
                     style={{
