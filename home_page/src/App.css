@@ -372,7 +372,7 @@
     padding: 100px 5%;
   }
   .third-inner-section {
-    padding: 150px 5%;
+    padding: 150px 5% !important;
   }
 }
 @media screen and (max-width: 1500px) {
