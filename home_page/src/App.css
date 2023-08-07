@@ -220,10 +220,50 @@
   justify-content: space-between;
   gap: 50px;
 }
+.vector-div {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  z-index: 15;
+}
+.vector-img {
+  fill: #fff;
+  transition: fill 0.3s ease;
+  z-index: 15;
+}
+.vector-img2 {
+  fill: #fff;
+  transition: fill 0.3s ease;
+  z-index: 15;
+}
+.vector-div:hover .vector-img {
+  transform: rotate(50deg);
+  fill: #ff1f71 !important;
+  z-index: 15;
+}
+.vector-div:hover .vector-img2 {
+  transform: rotate(-50deg);
+  margin-top: -2px;
+  fill: #ff1f71 !important;
+  z-index: 15;
+}
+.vector-div:hover {
+  height: 0px;
+  z-index: 15;
+}
 @media screen and (max-width: 1100px) {
   .item-div {
     display: none;
   }
+  .vector-div {
+    display: flex;
+    flex-direction: column;
+    height: 13px;
+    justify-content: space-between;
+    width: 40px;
+  }
+
   .heading-div h1 {
     font: normal 1000 100px/150px AbrilFatface;
     margin: 0;

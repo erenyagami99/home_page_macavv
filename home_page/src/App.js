@@ -142,6 +142,32 @@ function App() {
         </div>
       </div>
       <div className="first-section">
+        <div className="vector-div">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            className="vector-img"
+            height="2"
+          >
+            <path
+              d="M0 0h22a1 1 0 0 1 1 1v1H1a1 1 0 0 1-1-1V0z"
+              fill-rule="evenodd"
+              data-name="Rectangle 11"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            className="vector-img2"
+            height="2"
+          >
+            <path
+              d="M0 0h22a1 1 0 0 1 1 1v1H1a1 1 0 0 1-1-1V0z"
+              fill-rule="evenodd"
+              data-name="Rectangle 11"
+            />
+          </svg>
+        </div>
         <div className="heading-div">
           <h1>This is a</h1>
           <h1>Test Heading</h1>
