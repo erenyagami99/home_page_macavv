@@ -289,7 +289,7 @@ function App() {
                 />
                 <div className="image-heading">
                   <div className="heading-inner">
-                    <h1>Brand Identity</h1>
+                    <h1>UI/UX</h1>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
