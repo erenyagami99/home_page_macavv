@@ -75,28 +75,49 @@ function App() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
+  const [isScrolledToSection, setIsScrolledToSection] = useState(false);
 
   const maxNumber1 = 14;
   const maxNumber2 = 30;
   const maxNumber3 = 27;
 
-  useEffect(() => {
-    const interval1 = setInterval(() => {
-      if (count1 < maxNumber1) {
-        setCount1((prevCount) => prevCount + 1);
-      } else {
-        clearInterval(interval1);
-      }
-    }, 200);
 
-    const interval2 = setInterval(() => {
-      if (count2 < maxNumber2) {
-        setCount2((prevCount) => prevCount + 1);
+  const handleScroll = () => {
+    const sectionElement = document.querySelector('.third-section');  
+    if (sectionElement) {
+      const rect = sectionElement.getBoundingClientRect();
+      if (rect.top >= 100 ) {    
+        setIsScrolledToSection(true);
+      } else {
+        setIsScrolledToSection(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  useEffect(() => {
+    if (isScrolledToSection) {
+      const interval1 = setInterval(() => {
+        if (count1 < maxNumber1) {
+          setCount1((prevCount) => prevCount + 1);
+        } else {
+          clearInterval(interval1);
+        }
+      }, 200);
+      const interval2 = setInterval(() => {
+        if (count2 < maxNumber2) {
+          setCount2((prevCount) => prevCount + 1);
       } else {
         clearInterval(interval2);
       }
     }, 200);
-
     const interval3 = setInterval(() => {
       if (count3 < maxNumber3) {
         setCount3((prevCount) => prevCount + 1);
@@ -104,13 +125,14 @@ function App() {
         clearInterval(interval3);
       }
     }, 200);
-
+  
     return () => {
       clearInterval(interval1);
       clearInterval(interval2);
       clearInterval(interval3);
     };
-  }, [count1, count2, count3]);
+  }
+  }, [isScrolledToSection,count1,count2,count3]);
 
   return (
     <div>

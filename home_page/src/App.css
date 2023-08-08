@@ -307,17 +307,17 @@
     padding: 80px 60px !important;
   }
   .heading-div h1 {
-    font: normal normal normal 70px/70px AbrilFatface !important;
+    font: normal 1000 70px/70px AbrilFatface !important;
     width: 95%;
   }
   .heading-div h1:first-child {
-    font: normal normal normal 40px/70px AbrilFatface !important;
+    font: normal 1000 40px/70px AbrilFatface !important;
   }
   .writing-div {
     width: 100% !important;
   }
   .details-div h1 {
-    font: normal normal 45px/23px Outfit;
+    font: normal 800 45px/23px Outfit;
   }
   .details-div p {
     font: normal 300 16px/22px Outfit;
@@ -375,7 +375,7 @@
 }
 .writing-div h1 {
   margin: 0;
-  font: normal normal 60px/60px AbrilFatface;
+  font: normal 1000 60px/60px AbrilFatface;
   color: #ffffff;
 }
 .writing-div h1:first-child {
@@ -457,7 +457,7 @@
 }
 .details-div h1 {
   margin-bottom: 20px;
-  font: normal normal 69px/23px Outfit;
+  font: normal 800 69px/23px Outfit;
 }
 .details-div p {
   margin: 0;
@@ -702,7 +702,7 @@
   }
 
   .writing-div h1 {
-    font: normal normal 40px/40px AbrilFatface !important;
+    font: normal 1000 40px/40px AbrilFatface !important;
   }
   .writing-div p {
     font: normal 300 16px/26px Outfit !important;
@@ -716,7 +716,7 @@
     width: 100% !important;
   }
   .details-div h1 {
-    font: normal normal 800 31px/10px Outfit !important;
+    font: normal 800 31px/10px Outfit !important;
   }
   .details-div p {
     font: normal normal 200 14px/12px Outfit !important;
